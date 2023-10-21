@@ -1,0 +1,306 @@
+/* **** Design & Developed By GOWTHAM TIRRI *** */
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+:root {
+  --font-large: 9vmin;
+  --font-medium: 7vmin;
+  --font-small: 4vmin;
+
+  --gradient-1: linear-gradient(to bottom right, rgb(107, 107, 255), blue);
+
+  --gradient-2: linear-gradient(
+    to bottom right,
+    rgb(80, 80, 255),
+    rgb(253, 119, 119)
+  );
+
+  --gradient-3: linear-gradient(
+    to bottom right,
+    rgb(255, 207, 145),
+    rgb(255, 111, 92)
+  );
+  --gradient-4: linear-gradient(
+    to bottom right,
+    rgb(255, 111, 92),
+    rgb(255, 207, 145)
+  );
+
+  --gradient-5: linear-gradient(to bottom right, #2af598, #009efd);
+}
+/* Global */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+body h1 {
+  color: #282f59;
+}
+body p {
+  color: #7c7c7c;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* header  */
+header {
+  background-image: url(images/header-bg.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 2rem;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar li a {
+  margin-right: 4rem;
+  color: #fff;
+}
+.ctn {
+  padding: 10px 20px;
+  background: var(--gradient-3);
+  border-radius: 2rem;
+}
+.ctn:hover {
+  background: var(--gradient-4);
+}
+.row {
+  display: flex;
+  align-items: center;
+  padding: 5rem 3rem;
+}
+.header-content,
+.hero-img {
+  flex-basis: 50%;
+  padding: 5rem;
+}
+.header-content {
+  margin-top: 10rem;
+}
+.header-content h1 {
+  font-size: var(--font-medium);
+  margin-bottom: 30px;
+}
+.header-content p {
+  margin-bottom: 30px;
+}
+.header-content .learnmore {
+  padding: 10px 20px;
+  border-radius: 2rem;
+  border: 1px solid tomato;
+  color: tomato;
+  margin-right: 30px;
+}
+.header-content .learnmore:hover {
+  background: var(--gradient-4);
+  border: none;
+  color: whitesmoke;
+}
+.hero-img img {
+  margin-left: 80px;
+}
+
+/* =================services================== */
+.services {
+  margin-top: 50px;
+}
+.container {
+  display: flex;
+  padding: 3rem;
+}
+.grid-wrapper,
+.services-content {
+  flex-basis: 50%;
+}
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  gap: 2em;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.grid-box {
+  height: 200px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
+}
+.grid-box img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  animation: scaleup 6s ease-in-out infinite;
+}
+.grid-box h1 {
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+.mobileapp {
+  background: var(--gradient-1);
+}
+.webdesign {
+  background: var(--gradient-2);
+  margin-top: 30px;
+}
+.marketing {
+  background: var(--gradient-3);
+}
+.branding {
+  background: var(--gradient-5);
+  margin-top: 30px;
+}
+.services-content {
+  padding: 3rem;
+  position: relative;
+}
+.services-content h1 {
+  font-size: 6vmin;
+  margin-bottom: 30px;
+}
+.services-content p {
+  padding-right: 5rem;
+  margin-bottom: 30px;
+}
+.circle img {
+  position: absolute;
+  top: -10%;
+  left: -20%;
+  width: 650px;
+  z-index: -1;
+  animation: scaleup 6s ease-in-out infinite;
+}
+/* Animation */
+@keyframes scaleup {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+/* ================Numbers============  */
+.numbers {
+  margin-top: 100px;
+}
+.numbers .num-text {
+  font-size: 40px;
+  padding-left: 5rem;
+  padding-right: 50%;
+}
+.numbers p {
+  padding-left: 5rem;
+  padding-right: 50%;
+}
+
+.mockup-img {
+  flex-basis: 50%;
+}
+.mockup-img img {
+  max-width: 100%;
+  margin: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.432);
+  border-radius: 10px;
+}
+
+.hpyclients {
+  background: var(--gradient-1);
+}
+.prjcompleted {
+  background: var(--gradient-2);
+}
+.runningprj {
+  background: var(--gradient-3);
+}
+.awsmdesign {
+  background: var(--gradient-5);
+}
+
+.numbers .grid-box h2 {
+  color: whitesmoke;
+  font-weight: 400;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.numbers .grid-box h1 {
+  font-size: 40px;
+}
+.numbers .grid-box {
+  transition: transform 0.2s ease-in-out;
+}
+.numbers .grid-box:hover {
+  transform: translateY(-5px);
+}
+/* ========projects======== */
+.projects {
+  margin-top: 80px;
+  text-align: center;
+}
+.projects h1 {
+  font-size: 40px;
+}
+.projects-images {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+}
+.prj-img {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.prj-img img {
+  max-height: 100%;
+  min-width: 100%;
+}
+.projects-images .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 255, 0.526);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.prj-img:hover .details {
+  transform: scaleX(1);
+}
+.details h1,
+h2,
+i {
+  color: whitesmoke;
+}
+.details i {
+  font-size: 30px;
+}
